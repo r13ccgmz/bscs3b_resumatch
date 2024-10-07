@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IQuiryJS Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="script.js"></script>
+  </head>
+<body>
+    <main>
+          <!-- Parallax Section 1 -->
+    <section class="parallax parallax1">     
+      <div class="Motto">
+      <h2>Creating possibilities within a stretch.</h2>
+      <h1>This is where your journey begins</h1>
+        </div>
+      <div class="parallax-content">
+        <div class= "apply">
+          <a href="{{ url_for('upload_resume') }}" class="button">Apply Now!</a>
+        </div>
+      </div>
+  </section>
+  <!-- Content Section -->
+  <section class="content">
+      <h2>About Us</h2>
+      <p>Your company's introduction and mission statement go here.</p>
+  </section>
+
+  <!-- Parallax Section 2 -->
+  <section class="parallax parallax2">
+      <div class="parallax-content">
+          <p>Opportunities for personal and professional development.</p>
+      </div>
+  </section>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
