@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IQuiryJS Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="script.js"></script>
+  </head>
+  <body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <h1>IQuiryJS</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Parallax Section -->
+    <section class="parallax">
+        <h2>Welcome to ResuMatch</h2>
+    </section>
+
+    <div class= "apply">
+      <a href="{{ url_for('upload_resume') }}" class="button">Apply Now!</a>
+      </div>      
+      
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About ResuMatch</h2>
+        <p>
+            ResuMatch is a powerful tool that helps developers and companies efficiently match job descriptions
+            to applicants' resumes. Built with cutting-edge AI, our tool ensures the best fit for every role.
+        </p>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <h2>How It Works</h2>
+        <p>
+            Upload your resume and job description, and ResuMatch will automatically find the best matches based
+            on keywords, skills, and experience.
+        </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>
+            Have any questions? Feel free to reach out to us at support@iquiryjs.com.
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 IQuiryJS - All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
