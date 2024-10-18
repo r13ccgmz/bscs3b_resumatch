@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IQuiryJS Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <h1>IQuiryJS</h1>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="{{ url_for('index') }}" class="active">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero-section">
+        <div class="hero-content">
+          <h2>Find Your Perfect Job</h2>
+          <p>Discover thousands of job opportunities that match your skills</p>
+        </div>
+      </section>
+      
+    <!-- Apply Now Section -->
+    <div class="apply" id="apply-now">
+        <a href="{{ url_for('upload_resume') }}" class="button">Apply Now!</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 IQuiryJS - All Rights Reserved</p>
+    </footer>
+</body>
+</html>
