@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard - IQuiryJS</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles5.css') }}">
+</head>
+<body>
+    <h2>Admin Dashboard</h2>
+    <p>Welcome, Admin!</p>
+    <a href="{{ url_for('admin_logout') }}">Logout</a>
+    <a href="{{ url_for('home') }}" class="back-button">Back to Home</a>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Qualification Grade (%)</th>
+                <th>Skills Score (%)</th>
+                <th>Education Score (%)</th>
+                <th>Experience Score (%)</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for interviewee in interviewees %}
+            <tr>
+                <td>{{ interviewee.id }}</td>
+                <td>{{ interviewee.name }}</td>
+                <td>{{ interviewee.email }}</td>
+                <td>{{ interviewee.qualification_grade | round(2) }}</td>
+                <td>{{ interviewee.skills_score | round(2) }}</td>
+                <td>{{ interviewee.education_score }}</td>
+                <td>{{ interviewee.experience_score }}</td>
+                <td>{{ interviewee.status }}</td>
+                <td>
+                    <a href="{{ url_for('edit_interviewee', id=interviewee.id) }}">Edit</a>
+                    <form action="{{ url_for('delete_interviewee', id=interviewee.id) }}" method="post" style="display:inline;">
+                        <button type="submit" onclick="return confirm('Are you sure you want to delete this interviewee?');">Delete</button>
+                    </form>
+                </td>
+            </tr>
+            {% else %}
+            <tr>
+                <td colspan="9">No interviewees found.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

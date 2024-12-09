@@ -1,0 +1,9 @@
+Flask==2.3.2
+PyPDF2==3.0.1
+docx2txt==0.8
+nltk==3.8.1
+spacy==3.5.3
+requests==2.31.0
+sendgrid==6.10.4
+fuzzywuzzy
+python-Levenshtein

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>IQuiryJS Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <h1>IQuiryJS</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}" class="active">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                <li><a href="{{ url_for('admin_login') }}">Admin Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Parallax Section -->
+    <section class="parallax">
+        <h2>Welcome to IQuiryJS</h2>
+    </section>
+
+    <div class="apply">
+        <a href="{{ url_for('upload_resume') }}" class="button">Apply Now!</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 IQuiryJS - All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>
