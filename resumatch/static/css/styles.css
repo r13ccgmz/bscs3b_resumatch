@@ -15,18 +15,16 @@ body {
 
 /* Sticky Navigation Bar */
 header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background-color: #333;
   display: flex;
   justify-content: space-between;
-  padding: 1rem 2rem;
-  border-bottom: 2px solid yellow;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #ccc;
 }
 
 header h1 {
-  color: yellow;
+  color: rgb(10, 10, 10);
 }
 
 nav ul {
@@ -36,28 +34,28 @@ nav ul {
 }
 
 nav ul li a {
-  color: white;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   padding: 10px 15px;
   font-weight: bold;
 }
 
 nav ul li a:hover {
-  background-color: yellow;
+  background-color: rgb(244, 244, 239);
   color: black;
   transition: 0.3s;
 }
 
 nav ul li a:hover,
 nav ul li a.active {
-  background-color: yellow;
+  background-color: rgb(183, 183, 183);
   color: black;
 }
 
 .button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #007BFF;
+  background-color: #000000;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
@@ -65,7 +63,7 @@ nav ul li a.active {
 }
 
 .button:hover {
-  background-color: #0056b3;
+  background-color: #525961;
 }
 
 .parallax {
@@ -81,7 +79,7 @@ nav ul li a.active {
 
 .parallax h2 {
   font-size: 4rem;
-  color: yellow;
+  color: rgb(255, 255, 255);
   text-shadow: 2px 2px 4px #000;
 }
 
@@ -91,14 +89,14 @@ nav ul li a.active {
   margin-top: 40px;
   font-size: 24px;
   font-weight: bold;
-  color: #d2d3dc;
+  color: #1b1d1d;
 }
 
 .button {
   display: block;
   padding: 12px 24px;
-  background-color: #060f91;
-  color: #fff;
+  background-color: #f5f2f2;
+  color: #000000;
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease;
@@ -111,13 +109,52 @@ nav ul li a.active {
 }
 
 .button:hover {
-  background-color: #07c8f8;
+  background-color: #f2ff00;
 }
 
 /* Upload ASection */
+
+.upload-resume h2 {
+  text-align: center;
+  margin: 20px 0;
+  color: white;
+}
+
 .upload-section {
   text-align: center;
   margin: 20px 0;
+}
+
+.upload-section {
+  padding: 60px 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.upload-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.upload-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.upload-form input[type="text"],
+.upload-form input[type="email"],
+.upload-form input[type="file"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
 }
 
 /* Style input file element */
@@ -203,8 +240,8 @@ section {
 .back-button {
   display: inline-block;
   padding: 12px 25px;
-  background-color: #060f91;
-  color: #fff;
+  background-color: #f8f8f9;
+  color: #000000;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
@@ -212,7 +249,7 @@ section {
 }
 
 .back-button:hover {
-  background-color: #07c8f8;
+  background-color: #c4fd1b;
   color: #000;
 }
 
@@ -232,9 +269,10 @@ section {
 /* Footer Styling */
 footer {
   background-color: #222;
-  color: yellow;
+  color: rgb(204, 238, 78);
   text-align: center;
   padding: 20px 0;
+  margin-top: 270px;
 }
 
 footer p {

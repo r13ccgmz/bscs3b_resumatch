@@ -30,8 +30,8 @@
                 <td>{{ interviewee.id }}</td>
                 <td>{{ interviewee.name }}</td>
                 <td>{{ interviewee.email }}</td>
-                <td>{{ interviewee.qualification_grade }}</td>
-                <td>{{ interviewee.skills_score }}</td>
+                <td>{{ interviewee.qualification_grade | round(2) }}</td>
+                <td>{{ interviewee.skills_score | round(2) }}</td>
                 <td>{{ interviewee.education_score }}</td>
                 <td>{{ interviewee.experience_score }}</td>
                 <td>{{ interviewee.status }}</td>
